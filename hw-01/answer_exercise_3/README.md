@@ -9,9 +9,11 @@ VOLUME static_content /usr/share/nginx/html
 
 #abrir el puero 80
 EXPOSE 80
+
 5. Ejecutar estos comandos 
    docker build -t img_ejercicio3 .
    docker run -d  --name web_ejercicio3  -p 3002:80 -v=$PWD/static_content:/usr/share/nginx/html img_ejercicio3
+
 6. ir a http://localhost:3002/   
 
    
