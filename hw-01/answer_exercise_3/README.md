@@ -18,8 +18,8 @@ EXPOSE 80
 
 docker build -t img_ejercicio3 .
 
-docker run -d  --name web_ejercicio3  -p 3002:80 -v=$PWD/static_content:/usr/share/nginx/html img_ejercicio3
+docker run -d  --name web_ejercicio3  -p 8080:80 -v=$PWD/static_content:/usr/share/nginx/html img_ejercicio3
 
-6. ir a http://localhost:3002/   
+6. ir a http://localhost:8080/   
 
    
